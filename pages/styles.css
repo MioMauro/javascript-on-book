@@ -6,16 +6,18 @@
 
 h1{
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 h2{    
-    margin: 10px 0;
+    margin:0;
+    font-size: 0.8;
 }
 
 h3{
     margin: 0;
     color: rgb(48, 45, 45);
+    font-weight: bold;
 }
 
 p{
@@ -23,14 +25,11 @@ p{
     margin-bottom: 0.3rem;
 }
 
-.page-number{
-    margin: 0;    
-}
 
 .btn-var{
     background-color: #4CAF50; /* Green */
     border: 1px black solid;  
-    padding: 2px 0px 2px 2px;
+    padding: 6px 0px 6px 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -38,6 +37,15 @@ p{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;    
+}
+
+button a{
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 3px;
+    color: rgb(61, 40, 40);
+    text-decoration: none;
+    margin-left: 5px;
 }
 
 .btn{
@@ -53,14 +61,22 @@ p{
     border-radius: 5px;    
 }
 
-.text-bold{
+article{
+    padding: 1rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
-.page-number{
-    font-size: 0.6rem;
+
+
+
+
+
+
+
+
+.text-bold{
     font-weight: bold;
-    
 }
 
 section{
@@ -69,13 +85,11 @@ section{
     border-radius: 5px;
 }
 
-article{
-    font-size: 1rem;
-    font-weight: bold;
-}
+
 
 code{
-    margin: 0;    
+    margin: 0 auto; 
+    font-size: 1rem;   
 }
 
 a{
