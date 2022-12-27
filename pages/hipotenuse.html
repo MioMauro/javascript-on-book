@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hipotenuse</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>Hipotenuse</h2>
+    <br>
+
+    <section>
+        <article>    
+        <h3>How to find hipotenuse</h3>       
+        </article>
+    </section>
+    
+    <section>
+            <code>
+                let a<br>
+                let b<br>
+                let c<br>
+                <br>
+                a = window.prompt("Enter side A") // 10<br>
+                a = Number(a)<br>
+                <br>
+                b = window.prompt("Enter side B") // 10<br>
+                b = Number(b)<br>
+                <br>
+                c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));<br>
+                console.log("side C:" , c)<br>
+                <br>
+                result: side C: 14.142135623730951<br>
+            </code>
+    </section>
+
+    <div class="separatore"></div>
+    
+    <section>
+        <code>
+            <div class="monitor-html">
+                <code>        
+                <p class="text"> Html </p>
+                &lt;label&gt; id="aLabel" for="">Side A:&lt;/label&gt;<br>
+                &lt;input&gt; type="text" id="aTextBox"><br>
+            
+                &lt;label&gt; id="bLabel" for="">Side B:&lt;/label&gt;<br>
+                &lt;input&gt; type="text" id="bTextBox"><br>
+            
+                &lt;button&gt; type="button" id="submitButton">submit&lt;button&gt;<br>
+            
+                &lt;label&gt; id="cLabel" for="">Side C:&lt;/label&gt;<br>
+                </code>
+            </div>
+        </code>
+    </section>
+
+    <div class="monitor-javascript">
+        <code>
+            <p class="text"> Javascript </p>
+
+            let a<br>
+            let b<br>
+            let c<br>
+            <br>
+            document.getElementById("submitButton").onclick = function(){<br>
+                <br>
+                a = document.getElementById("aTextBox").value<br>
+                a = Number(a)<br>
+                <br>
+                b = document.getElementById("bTextBox").value<br>
+                b = Number(b)<br>
+                <br>
+                c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))<br>
+                <br>
+                document.getElementById("cLabel").innerHTML = "Side C: " + c<br>
+            }
+        <br>
+                
+        </code>
+    </div>
+
+
+    <div class="monitor-result">
+        <p class="text"> Monitor result ⬇️ </p>
+        <br> 
+    <label id="aLabel" for="">Side A:</label><br>
+    <input type="text" id="aTextBox"><br>
+
+    <label id="bLabel" for="">Side B:</label><br>
+    <input type="text" id="bTextBox"><br>
+
+    <button type="button" id="submitButton">submit</button><br>
+
+    <label id="cLabel" for="">Side C:</label><br>    
+</div>
+
+
+
+
+
+    
+</body>
+<script src="hipotenuse.js"></script>
+</html>

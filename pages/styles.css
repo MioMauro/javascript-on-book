@@ -67,14 +67,6 @@ article{
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
 .text-bold{
     font-weight: bold;
 }
@@ -84,8 +76,6 @@ section{
     padding: 0.3rem;
     border-radius: 5px;
 }
-
-
 
 code{
     margin: 0 auto; 
@@ -123,10 +113,9 @@ a{
 	font-weight: bold;
 }
 
-.monitor-html{
-    background: rgb(75, 164, 236);
+.monitor-html{    
     border-radius: 3px;
-    padding: 1rem;
+    padding: 0.7rem;
 }
 
 .monitor-javascript{

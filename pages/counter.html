@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Counter</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>COUNTER</h2>
+    <br>
+
+    <section>
+        <code>
+            <p class="text"> Html </p>
+            &lt;label id="inputLabel"&gt;Enter you name &lt;/label&gt; <br>
+            &lt;input type="text" id="inputText"&gt; &lt;/input&gt; <br>
+            &lt;button class="btn" type="button" id="inputButton"&gt;Submit&lt;/button&gt; <br>
+        </code>
+    </section>
+
+    <div class="monitor-javascript">
+        <code>
+            <p class="text"> Javascript </p>
+            let count = 0<br>
+            <br>
+document.getElementById("decreaseBtn").onclick = function(){<br>
+    count -= 1<br>
+    document.getElementById("countLabel").innerHTML = count<br>
+}<br>
+<br>
+document.getElementById("resetBtn").onclick = function(){<br>
+    count = 0<br>
+    document.getElementById("countLabel").innerHTML = count<br>
+}<br>
+<br>
+document.getElementById("increaseBtn").onclick = function(){<br>
+    count += 1<br>
+    document.getElementById("countLabel").innerHTML = count<br>
+}<br>
+    </code>
+    </div>
+
+
+
+
+    
+    <div class="monitor-result">
+        <p class="text"> Monitor result ⬇️ </p>
+        <br> 
+    <label id="countLabel">0</label><br>
+    <button id="decreaseBtn">decrease</button>
+    <button id="resetBtn">reset</button>
+    <button id="increaseBtn">increase</button><br>    
+</div>
+    
+
+    <div class="separatore"></div> 
+    
+</body>
+<script src="counter.js"></script>
+</html>
+
+<!--
+
+
+
+
+
+
+
+-->
