@@ -16,8 +16,12 @@ h2{
 
 h3{
     margin: 0;
-    color: rgb(48, 45, 45);
+    color: rgb(46, 39, 39);
     font-weight: bold;
+}
+
+h4{
+    margin: 0;
 }
 
 p{

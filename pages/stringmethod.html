@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>STRING METHOD</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>USEFUL STRING METHOD</h2>
+    <br>
+
+    <section>
+        <article>    
+        <h3>Useful string properties & methods</h3><br>
+        <h4>length, charAt, indexOf, lastIndexOf, trim, toUpperCase, replaceAll</h4>
+    </article>
+    </section>
+    
+    <section>
+            <code>
+                let userName = "Bro Code"<br>
+                console.log(userName.length) // characters<br><br>
+                <h4>result: 8</h4>
+            </code>
+    </section>
+
+    <section>
+        <code>
+            let userName = "Bro Code"<br>
+        console.log(userName.chart(0)) // index = 0<br><br>
+        <h4>result: B<br></h4>
+        <br>
+        let userName = "Bro Code"<br>
+        console.log(userName.chart(1))<br><br>
+        <h4>result: r</h4>
+        </code>
+</section>
+
+<section>
+    <code>
+        let userName = "Bro Code"<br>
+        console.log(userName.indexOf("o")) // character position in the string<br><br>
+        <h4>result: 2</h4><br>
+    </code>
+    <br>
+    <code>
+        let userName = "Bro Code"<br>
+        console.log(userName.lastIndexOf("d")) // number of character and white spaces until the "d" letter<br><br>
+        <h4>result: 6</h4>
+    </code>
+</section>
+
+<section>
+    <code>
+        let userName = "Bro Code"<br>
+        userName = userName.toUpperCase();<br>
+        console.log(userName)<br><br>
+        <h4>result: BRO CODE</h4><br>
+    </code>
+<br>
+    <code>
+        let userName = "Bro Code"<br>
+        userName = userName.toLowerCase();<br>
+        console.log(userName)<br><br>
+        <h4>result: bro code</h4><br>
+    </code>
+</section>
+
+<section>
+    <code>        
+        let phoneNumber = "123-456-7890"<br>
+        phoneNumber = phoneNumber.replaceAll("-", "/") // replace from - TO /<br>
+        console.log(phoneNumber)<br><br>
+        <h4>result: 123/456/7890</h4><br>
+    </code>
+<br>
+    <code>        
+        let phoneNumber = "123-456-7890"<br>
+        phoneNumber = phoneNumber.replaceAll("-", "") // replace from - TO nothing<br>
+        console.log(phoneNumber)<br><br>
+        <h4>result: 1234567890</h4><br>
+    </code>
+</section>
+
+<div class="separatore"></div> 
+    
+</body>
+<script src="stringmethod.js"></script>
+</html>
+
