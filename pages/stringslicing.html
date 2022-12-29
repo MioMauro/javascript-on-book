@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>STRING-SLICING</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>STRING SLICING</h2>
+    <br>
+
+    <section>
+        <article>    
+        <h3>slice()</h3><br>
+        <h4>extracts a section of a string,
+            and returns it as a new string,<br>
+            without modifying the original string</h4>
+        </article>
+    </section>
+    
+    <section>
+            <code>
+                let fullName = "Bro Code"<br>
+                let firstName<br>
+                let lastName<br>
+                <br>
+                lastName = fullName.slice(4) //cut the first 4 spaces
+                <br>
+                console.log(lastName) <br><br>              
+            <br>
+            <h4>result: Code</h4>
+            </code>
+    </section>
+
+    <section>
+        <code>
+            let fullName = "Bro Code"<br>  
+            let firstName<br>  
+            let lastName<br>  
+            <br>  
+            firstName = fullName.slice(0, fullName.indexOf(" "))<br>  
+            <br>  
+            console.log(firstName)<br><br>              
+        <br>
+        <h4>result: Bro</h4>
+        </code>
+</section>
+
+    <section>
+        <code>
+            let fullName = "Bro Code"<br>  
+            let firstName<br>  
+            let lastName<br>  
+            <br>  
+            lastName = fullName.slice(fullName.indexOf(" ") + 1)<br>  
+            <br>  
+            console.log(lastName)<br><br>              
+        <br>
+        <h4>result: Code</h4>
+        </code>
+</section>
+
+    <div class="separatore"></div> 
+    
+</body>
+<script src="stringslicing.js"></script>
+</html>

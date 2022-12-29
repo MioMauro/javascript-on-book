@@ -26,6 +26,14 @@ p{
     margin-bottom: 0.3rem;
 }
 
+.under{
+    text-align: center;
+    color: red;
+    font-size: 8rem;
+    font-weight: bold;
+    text-shadow: 4px 4px rgb(72, 80, 72);
+}
+
 nav>div{
     margin: 0 auto;
     background: #e76f6f;

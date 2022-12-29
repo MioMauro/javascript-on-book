@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Method chaining</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>Method chaining</h2>
+    <br>
+
+    <section>
+        <article>    
+        <h3>Method chaining = </h3><br>
+        <h4>calling one method after another, in one continuous line of code</h4>
+        </article>
+    </section>
+    
+    <section>
+            <code>
+                let userName = "bro"<br>
+                let letter = userName.charAt(0) // b<br>
+                letter = letter.toUpperCase()<br>
+                console.log(letter) <br><br>
+            <h4>result: B (Uppercase)</h4>
+            </code>
+    </section>
+
+    <section>
+        <code>
+            let userName = "bro"<br>
+            let letter = userName.charAt(0).toUpperCase() // same, but simplified<br>
+            console.log(letter) <br><br>
+        <h4>result: B (Uppercase)</h4>
+        </code>
+</section>
+<br>
+<br>
+<section>
+    <code>
+        let userName = "bro"<br>
+        let letter = userName.charAt(0).toUpperCase().trim() // concatinating methods<br>
+        console.log(letter) <br><br>
+    <h4>result: B (Uppercase)</h4>
+    </code>
+</section>
+
+    <div class="separatore"></div> 
+    
+</body>
+<script src="methodchaining.js"></script>
+</html>
+

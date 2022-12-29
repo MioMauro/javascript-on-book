@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>if statement</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>if statement</h2>
+    <br>
+
+    <section>
+        <article>    
+        <h3>if =</h3><br>
+        <h4>A basic form of decision making. If a condition is TRUE, then do something. <br>If not, then don't do it!</h4>
+        <br>
+        <h3>if, if else, else</h3>
+    </article>
+    </section>
+    
+    <section>
+            <code>
+                let age = 18<br>
+                <br>
+                if(age >= 18){ // from 18 to "infinite" is true<br><br>
+                    console.log("You are an adult!")<br>                    
+                }<br><br>          
+            <h4>result: You are an adult!</h4>
+            </code>
+            <p>---------------------------------------------------------------------------</p>
+                <br><br>
+            <code>
+                let age = 17<br>
+                <br>
+                if(age >= 18){ <br><br>
+                    console.log("You are an adult!")<br>
+                }<br>
+                else{<br>
+                    console.log("You ere a child!")<br>
+                }<br><br>
+            <h4>result: You ere a child!</h4>
+            </code>
+            <p>---------------------------------------------------------------------------</p>
+            <br><br>
+            <code>
+                let age = -5<br><br>
+                <br>
+                if(age >= 18){ <br><br>
+                console.log("You are an adult!")<br>
+                }<br>
+                else if(age < 0){ <br><br>
+                console.log("You don't live")<br>
+                }<br>
+                else{<br>
+                console.log("You ere a child!")<br>
+                }<br><br>
+                <h4>result: You don't live</h4>
+            </code>
+            <p>---------------------------------------------------------------------------</p>
+            <br><br>
+            <code>
+                let age = 65<br><br>
+                <br>
+                if(age >= 65){ <br><br>
+                console.log("You are a senior citizen!")<br>
+                }<br>
+                if(age >= 18){ <br><br>
+                    console.log("You are an adult!")<br>
+                    }<br>
+                else if(age < 0){ <br><br>
+                console.log("You don't live")<br>
+                }<br>
+                else{<br>
+                console.log("You ere a child!")<br>
+                }<br><br>
+                <h4>result: You are a senior citizen!</h4>
+            </code>
+        </section>
+
+        <section>
+            <br><br>
+            <code>
+                let online = true<br>
+                <br>
+            if(online){<br>
+            console.log("You are online!")<br>
+            } else{<br>
+            console.log("You are offline")<br>
+            }<br><br>
+                <h4>result: You are online!</h4>
+            </code>
+        </section>
+    
+
+    <div class="separatore"></div> 
+    
+</body>
+<script src="ifstatement.js"></script>
+</html>
+
