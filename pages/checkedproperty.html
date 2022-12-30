@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Checked property</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>Checked property</h2>
+    <br>
+
+    <section>
+        <code>
+            <p class="text"> Html </p>
+            &lt;label for="myCheckBox"&gt;Subscribe &lt;/label&gt; <br>
+            &lt;input type="checkbox" id="myCheckBox"&gt; &lt;/input&gt; <br>
+            &lt;button id="myButton"&gt;Submit&lt;/button&gt; <br>
+        </code>
+    </section>
+
+    <div class="monitor-javascript">
+        <code>
+            <p class="text"> Javascript </p>
+            document.getElementById("myButton").onclick = function(){<br><br>
+            if(document.getElementById("myCheckBox").checked){<br>
+            console.log("you are subscribed!") <br>           
+            } else {<br>
+            console.log("You are not subscribed!")<br>
+            } <br>        
+        </code>
+    </div>
+
+        <div class="monitor-result">
+        <p class="text"> Monitor result ⬇️ </p>
+        <br>
+            <label for="myCheckBox">Subscribe </label> <br>
+            <input type="checkbox" id="myCheckBox"> </input> <br>
+            <button id="myButton">Submit</button> <br>
+        </div>    
+
+        <section>
+            <code>
+                <h4>result: same as above, only change variable</h4><br>
+                document.getElementById("myButton").onclick = function(){<br><br>
+                    const myCheckBox = document.getElementById("myCheckBox")<br>
+                    if(myCheckBox.checked){<br>
+                        console.log("you are subscribed!") <br>           
+                    } else {<br>
+                    console.log("You are not subscribed!")<br>
+                    } <br>             
+            </code>
+        </section>
+
+    <div class="separatore"></div> 
+
+    <section>
+        <code>
+            
+            <p class="text"> Html </p>
+            &lt;label for="myCheckBox">Subscribe &lt;/label> <br>
+            &lt;input type="checkbox" id="myCheckBox"> &lt;/input> <br>
+            <br>
+            &lt;label for="visaBtn">Visa&lt;/label><br>
+            &lt;input type="radio" name="card" id="visaBtn"><br>
+            <br>
+            &lt;label for="mastercardBtn">Mastercar&lt;/label><br>
+            &lt;input type="radio" name="card" id="mastercardBtn"><br>
+            <br>
+            &lt;label for="paypalBtn">PayPal&lt;/label><br>
+            &lt;input type="radio" name="card" id="paypalBtn"><br>         
+            <br>
+            &lt;button id="button">Submit&lt;/button><br>
+        </code>
+    </section>
+
+    <div class="monitor-javascript">
+        <code>
+            <p class="text"> Javascript </p>
+            document.getElementById("button").onclick = function(){<br>
+                <br>
+                const myCheckBox = document.getElementById("myCheckBox")<br>
+                const vistaBtn = document.getElementById("visaBtn")<br>
+                const mastercardBtn = document.getElementById("mastercardBtn")<br>
+                const paypalBtn = document.getElementById("paypalBtn")<br>
+                <br>
+                if(myCheckBox.checked){<br>
+                    console.log("you are subscribed!")<br>            
+                } else {<br>
+                console.log("You are not subscribed!")<br>
+                }<br>
+                    if(vistaBtn.checked){<br>
+                    console.log("You are paying with VISA")<br>
+                }<br>
+                else if(mastercardBtn.checked){<br>
+                    console.log("You are paying with MASTERCARD")<br>
+                }<br>
+                else if(paypalBtn.checked){<br>
+                    console.log("You are paying with PAYPAL")<br>
+                }<br>
+                else {<br>
+                    console.log("You must select a payment type!")<br>
+                }<br>
+            } <br>
+        </code>
+    </div>
+
+
+
+
+
+    <div class="monitor-result">
+        <p class="text"> Monitor result ⬇️ </p>
+        <br>
+            <label for="myCheckBox">Subscribe </label> <br>
+            <input type="checkbox" id="myCheckBox"> </input> <br>
+            
+            <label for="visaBtn">Visa</label>
+            <input type="radio" name="card" id="visaBtn">
+
+            <label for="mastercardBtn">Mastercar</label>
+            <input type="radio" name="card" id="mastercardBtn">
+            
+            <label for="paypalBtn">PayPal</label>
+            <input type="radio" name="card" id="paypalBtn">           
+            <br>
+            <button id="button">Submit</button> <br>
+
+            <p>(Flag "subscribe" also Up in this page)</p>
+        </div> 
+
+
+
+
+
+    
+</body>
+<script src="checkedproperty.js"></script>
+</html>
+
+<!--
+ <p>---------------------------------------------------------------------------</p>
+
+
+<div class="monitor-javascript">
+    <code>
+        <p class="text"> Javascript </p>
+        let username<br>
+        document.getElementById("inputButton").onclick = function(){<br>
+        username = document.getElementById("inputText").value<br>
+        console.log(username) <br>
+        document.getElementById("inputLabel").innerHTML = "Hello " + username
+    <br>
+    } <br>        
+    </code>
+</div>
+
+<div class="monitor-result">
+    <p class="text"> Monitor result ⬇️ </p>
+    <br> 
+    <label id="inputLabel">Enter you name</label> <br>
+    <input type="text" id="inputText"> <br>
+    <button class="btn" type="button" id="inputButton">Submit</button>
+</div>
+    
+
+<div class="separatore"></div> 
+-->
