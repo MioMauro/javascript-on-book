@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>&& and OR</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>&& and OR</h2>
+    <br>
+
+    <section>
+        <article>    
+        <h3>Logical operator</h3><br>
+        <h4>Gives us the ability to check more that 1 condition concurrently</h4>
+        <h4>&& AND (BOTH conditions must be true)</h4>
+        <h4>|| or (Either conditions can be true)</h4>
+    </article>
+    </section>
+    
+    <section>
+            <code>
+                let temperature = 15<br><br>
+                <br>
+                if(temperature > 0 && temperature < 30){<b> // BOTH conditions must be true</b><br>
+                    console.log("The weather is good")<br>
+                }<br>
+                else {<br>
+                    console.log("The weather is bad")<br>
+                }<br><br>
+            <h4>result: The weather is good</h4>
+            </code>
+    </section>
+
+    <section>
+        <code>
+            let temperature = 50<br><br>
+            <br>
+            if(temperature <= 0 || temperature >= 30){<b> // </b><br>
+                console.log("The weather is bad")<br>
+            }<br>
+            else {<br>
+                console.log("The weather is good")<br>
+            }<br><br>
+        <h4>result: The weather is bad</h4>
+        </code>
+</section>
+
+    <div class="separatore"></div>
+    
+    <section>
+        <code>
+            let temperature = 15<br>
+            let sunny = true<br><br>
+            <br>
+            if(temperature > 0 && temperature < 30 && sunny){<br>
+            console.log("The weather is bad")<br>
+            }<br>
+            else {<br>
+            console.log("The weather is good")<br>
+            }<br><br>
+        <h4>result: The weather is bad</h4>
+        </code>
+</section>
+
+<section>
+    <code>
+        let temperature = 15<br>
+        let sunny = false<br><br>
+        <br>
+        if(temperature > 0 && temperature < 30 && sunny){<br>
+        console.log("The weather is bad")<br>
+        }<br>
+        else {<br>
+        console.log("The weather is good")<br>
+        }<br><br>
+    <h4>result: The weather is good</h4>
+    </code>
+</section>
+
+    
+</body>
+<script src="andor.js"></script>
+</html>
+

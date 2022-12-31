@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>switches</title>
+    <title>Switches</title>
 </head>
 <body>
 
@@ -19,18 +19,112 @@
 
     <section>
         <article>    
-        <h3>Useful </h3><br>
-        <h4>length,</h4>
+        <h3>switch = </h3><br>
+        <h4>Statement(dichiarazione) that examines a value for a match against many case clauses.<br>
+            More efficient that many <b>"else if"</b> statement, as show in the first example below</h4><br>
         </article>
     </section>
     
     <section>
             <code>
-            let age;<br>
+                <p><i><b>first example (not best choice)</b></i></p><br>
+                let grade = "A"<br>
+                <br><br>
+                if(grade == "A"){<br>
+                    console.log("You did great!")<br>
+                }<br>
+                <br><br>
+                else if(grade == "B"){<br>
+                    console.log("You did good!")<br>
+                }<br>
+                <br>
+                else if(grade == "C"){<br>
+                    console.log("You did ok!")<br>
+                }<br>
+                <br>
+                else if(grade == "D"){<br>
+                    console.log("You passed...barely!")<br>
+                }<br>
+                <br>
+                else if(grade == "F"){<br>
+                    console.log("You failed!")<br>
+                }<br>
+                <br>
+                else {<br>
+                    console.log("is not a letter grade!!")<br>
+                }<br>
+                <br>
             console.log(age) <br><br>
-            <h4>result: 8</h4>
+            <h4>result: You did great!</h4>
             </code>
     </section>
+
+    <section>
+        <code>
+            <p><i><b>good practice</b></i></p><br>
+            let grade = "A"<br>
+            <br><br>
+switch(grade){<br><br>
+    case "A":<br>
+        console.log("You did great!")<br>
+        break;<br>
+        <br>
+        case "B":<br>
+        console.log("You did good!")<br>
+        break;<br>
+        <br>
+        case "C":<br>
+        console.log("You did ok!")<br>
+        break;<br>
+        <br>
+        case "D":<br>
+        console.log("You passed...barely!")<br>
+        break;<br>
+        <br>
+        case "F":<br>
+        console.log("You failed!")<br>
+        break;<br><br>
+        default:<br>
+            console.log(grade, "is not a letter grade!")<br>
+            // if is not "A", "B", "C", "D", "F", is "is not a ..."<br>
+        }<br><br>
+        <h4>result: You did great!</h4>
+        </code>
+</section>
+
+<section>
+    <code>
+        <p><i><b>Or, different example with Numbers</b></i></p><br>
+
+        let grade = 65<br>
+        <br>
+        switch(true){<br><br>
+
+            case grade >= 90:<br>
+                console.log("You did great!")<br>
+                break;<br>
+                <br>
+                case grade >= 80:<br>
+                console.log("You did good!")<br>
+                break;<br>
+                <br>
+                case grade >= 70:<br>
+                console.log("You did ok!")<br>
+                break;<br>
+                <br>
+                case grade >= 60:<br>
+                console.log("You passed...barely!")<br>
+                break;<br>
+                <br>
+                case grade > 60:<br>
+                console.log("You failed!")<br>
+                break;<br><br>
+                default:<br>
+                console.log(grade, "is not a letter grade!")<br>
+        }<br><br>
+    <h4>result: You passed...barely!</h4>
+    </code>
+</section>
 
     <div class="separatore"></div> 
     
@@ -38,39 +132,3 @@
 <script src="switches.js"></script>
 </html>
 
-<!--
- <p>---------------------------------------------------------------------------</p>
-    <section>
-    <code>
-        <h3>(Difficult way using HTML)</h3><br>
-        <p class="text"> Html </p>
-        &lt;label id="inputLabel"&gt;Enter you name &lt;/label&gt; <br>
-        &lt;input type="text" id="inputText"&gt; &lt;/input&gt; <br>
-        &lt;button class="btn" type="button" id="inputButton"&gt;Submit&lt;/button&gt; <br>
-    </code>
-</section>
-
-<div class="monitor-javascript">
-    <code>
-        <p class="text"> Javascript </p>
-        let username<br>
-        document.getElementById("inputButton").onclick = function(){<br>
-        username = document.getElementById("inputText").value<br>
-        console.log(username) <br>
-        document.getElementById("inputLabel").innerHTML = "Hello " + username
-    <br>
-    } <br>        
-    </code>
-</div>
-
-<div class="monitor-result">
-    <p class="text"> Monitor result ⬇️ </p>
-    <br> 
-    <label id="inputLabel">Enter you name</label> <br>
-    <input type="text" id="inputText"> <br>
-    <button class="btn" type="button" id="inputButton">Submit</button>
-</div>
-    
-
-<div class="separatore"></div> 
--->
