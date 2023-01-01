@@ -111,6 +111,79 @@
 
 <section >
 <h3>Traversing boxes</h3><br>
+
+<p class="text"> Html </p>
+&lt;section id="section"&gt; &lt;/section&gt;
+
+<div class="monitor-javascript">
+    <code>
+        <p class="text"> Javascript </p><br>
+        let position = 1;<br>
+        let length = 0;<br>
+        <br><br>
+        window.addEventListener('keydown', function(e) {<br>
+            switch (e.code) {<br>
+                case 'ArrowLeft':<br>
+                    if (length > 0) {<br>
+                        moveLeft();<br>
+                    }<br>
+                    break;<br>
+                case 'ArrowRight':<br>
+                    if (length > 0) {<br>
+                        moveRight();<br>
+                    }<br>
+                    break;<br>
+                case 'Space':<br>
+                    addBox();<br>
+                    break;<br>
+                case 'Backspace':<br>
+                    if (length > 0) {<br>
+                        removeBox();<br>
+                    }<br>
+            }<br>
+        });<br>
+        <br><br>
+        function addBox() {<br>
+            const newDiv = document.createElement('div');<br>
+            const section = document.getElementById('section');<br>
+            section.append(newDiv);<br>
+            if (length === 0) {<br>
+                newDiv.classList.add('active');<br>
+            }<br>
+            length++;<br>
+        }<br>
+        <br><br>
+        function removeBox() {<br>
+            if (position === length) {<br>
+                moveLeft();<br>
+            }<br>
+            document.querySelector('div:last-child').remove();<br>
+            length--;<br>
+        }<br>
+        <br><br>
+        function moveLeft() {<br>
+            document.querySelector(`div:nth-of-type(${position})`).classList.remove('active');<br>
+            position--;<br>
+            if (position < 1) {<br>
+                position = length;<br>
+            }<br>
+            document.querySelector(`div:nth-of-type(${position})`).classList.add('active');<br>
+        }<br>
+        <br><br>
+        function moveRight() {<br>
+            document.querySelector(`div:nth-of-type(${position})`).classList.remove('active');<br>
+            position++;<br>
+            if (position > length) {<br>
+                position = 1;<br>
+            }<br>
+            document.querySelector(`div:nth-of-type(${position})`).classList.add('active');<br>
+        }<br>       
+    </code>
+</div>
+
+
+</section>
+
 <h4>Controls</h4>
 <ul>
     <li>Spacebar: Add box</li>
@@ -120,70 +193,13 @@
 </ul><br>
 </section>
 
-<section id="section"></section>
+<div class="monitor-result">
+    <p class="text"> Monitor result ⬇️ </p>
+</div>
 
-    
-</section>
+<section id="section"></section></section>
 
-    
-    <section>
-        <code>
-            {<br>
-                )<br>
-                console.log('Code:', e.code)<br>
-                })<br><br>
-                <h4>press<br><br>                  
-            <h4>result: Key: m <br>
-                Code: KeyM</h4><br>
-        
-        </code>
-</section>
-
-<div class="separatore"></div> 
-
-
-
-
-
-
-    
 </body>
 <script src="keyboardevents.js"></script>
 </html>
 
-<!--
-<p>---------------------------------------------------------------------------</p>
-    <section>
-    <code>
-        <h3>(Difficult way using HTML)</h3><br>
-        <p class="text"> Html </p>
-        &lt;label id="inputLabel"&gt;Enter you name &lt;/label&gt; <br>
-        &lt;input type="text" id="inputText"&gt; &lt;/input&gt; <br>
-        &lt;button class="btn" type="button" id="inputButton"&gt;Submit&lt;/button&gt; <br>
-    </code>
-</section>
-
-<div class="monitor-javascript">
-    <code>
-        <p class="text"> Javascript </p>
-        let username<br>
-        document.getElementById("inputButton").onclick = function(){<br>
-        username = document.getElementById("inputText").value<br>
-        console.log(username) <br>
-        document.getElementById("inputLabel").innerHTML = "Hello " + username
-    <br>
-    } <br>        
-    </code>
-</div>
-
-<div class="monitor-result">
-    <p class="text"> Monitor result ⬇️ </p>
-    <br> 
-    <label id="inputLabel">Enter you name</label> <br>
-    <input type="text" id="inputText"> <br>
-    <button class="btn" type="button" id="inputButton">Submit</button>
-</div>
-    
-
-<div class="separatore"></div> 
--->

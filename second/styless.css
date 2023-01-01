@@ -136,25 +136,24 @@ a{
     padding: 1rem;
 }
 
-
-
-
-.traversing-boxes{
+#section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1rem;
 }
 
-.traversing{
+#section div{
     display: inline-block;
     width: 200px;
     height: 200px;
     margin: 20px;
     background-color: #4CAF50;
     transition: 0.30s;
+    border-radius: 5px;
 }
 
 .active{
     background-color: #1a3a1b;
-    transform: scale(1.25);
+    transform: scale(1.15);
 }
