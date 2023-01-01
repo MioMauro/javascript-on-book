@@ -135,3 +135,26 @@ a{
     border-radius: 3px;
     padding: 1rem;
 }
+
+
+
+
+.traversing-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.traversing{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #4CAF50;
+    transition: 0.30s;
+}
+
+.active{
+    background-color: #1a3a1b;
+    transform: scale(1.25);
+}

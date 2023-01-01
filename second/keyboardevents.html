@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <title>keyboardevents.html</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>keyboard events</h2>
+    <br>
+
+    <section>
+        <article>    
+        <h3>Window, KeyUp, KeyDown</h3><br>
+        <h4></h4>
+        </article>
+    </section>
+    <div class="separatore"></div> 
+    <section>
+            <code>
+                <p class="text"> Html </p>
+                &lt;button id="keyBtn"&gt;Click ME&lt;/button&gt;<br><br>
+                const btn = document.getElementById('keyBtn')<br>
+                btn.addEventListener('click', () => {<br>
+                console.log('btn-clicked')<br>
+            })<br><br>
+            <h4>result: btn-clicked</h4>
+            </code>
+    </section>
+
+    <button id="keyBtn">Click ME</button>
+
+    <div class="separatore"></div> 
+
+    <h3>The window object</h3><br>
+    <h4>clicking anywhere on the screen, we would get the result. Not just clicking on the button</h4>
+
+<section>
+            <code>
+                <p class="text"> Html </p>
+                &lt;button id="keyBtn"&gt;Click ME&lt;/button&gt;<br><br>
+                window.addEventListener('click', () => {<br>
+                console.log('window got clicked')<br>
+            })<br><br>
+            <h4>window got clicked</h4>
+            </code>
+    </section>
+
+    <div class="separatore"></div> 
+
+    <h3>keyup and keydown</h3><br>
+    <h4>Passing 2 event listener on the window object (window is an object)</h4>
+    <h4>- keyUp event, will be activated all time you press a key and then leave it</h4>
+    <h4>- instead, KeyDown will be activated in the same time you press it</h4>
+
+    <section>
+        <code>
+            window.addEventListener('keydown', () => {<br>
+                console.log('a key was pressed DOWN')<br>
+            })<br>
+        <br>
+        <h4>result: a key was pressed DOWN</h4><br>
+        // clicking any key on the keyboards
+        </code>
+</section>
+
+<div class="separatore"></div> 
+
+<h3>keyup and keydown</h3><br>
+    
+    <section>
+        <code>
+            window.addEventListener('keydown', () => {<br>
+                console.log('a key was pressed DOWN')<br>
+                })<br><br>
+            <h4>result: holding down the key the count on console goes on</h4><br>
+        <br>
+        window.addEventListener('keyup', () => {<br>
+            console.log('a key was let UP')<br>
+        })<br><br>
+        <h4>result: releasing the key, it stops, and warns us that "a key was let UP"</h4><br>        
+        </code>
+</section>
+
+<div class="separatore"></div> 
+
+<h3>To find code and Key property</h3><br>
+    
+    <section>
+        <code>
+            window.addEventListener('keydown', function(e) {<br>
+                console.log('Key:', e.key)<br>
+                console.log('Code:', e.code)<br>
+                })<br><br>
+                <h4>pressing 'm' on the keyboard<br><br>                  
+            <h4>result: Key: m <br>
+                Code: KeyM</h4><br>
+        
+        </code>
+</section>
+
+<div class="separatore"></div> 
+
+<section >
+<h3>Traversing boxes</h3><br>
+<h4>Controls</h4>
+<ul>
+    <li>Spacebar: Add box</li>
+    <li>Backspace: Remove box</li>
+    <li>Left Arrow: Move Left</li>
+    <li>Right Arrow: Move Right</li>
+</ul><br>
+</section>
+
+<section id="section"></section>
+
+    
+</section>
+
+    
+    <section>
+        <code>
+            {<br>
+                )<br>
+                console.log('Code:', e.code)<br>
+                })<br><br>
+                <h4>press<br><br>                  
+            <h4>result: Key: m <br>
+                Code: KeyM</h4><br>
+        
+        </code>
+</section>
+
+<div class="separatore"></div> 
+
+
+
+
+
+
+    
+</body>
+<script src="keyboardevents.js"></script>
+</html>
+
+<!--
+<p>---------------------------------------------------------------------------</p>
+    <section>
+    <code>
+        <h3>(Difficult way using HTML)</h3><br>
+        <p class="text"> Html </p>
+        &lt;label id="inputLabel"&gt;Enter you name &lt;/label&gt; <br>
+        &lt;input type="text" id="inputText"&gt; &lt;/input&gt; <br>
+        &lt;button class="btn" type="button" id="inputButton"&gt;Submit&lt;/button&gt; <br>
+    </code>
+</section>
+
+<div class="monitor-javascript">
+    <code>
+        <p class="text"> Javascript </p>
+        let username<br>
+        document.getElementById("inputButton").onclick = function(){<br>
+        username = document.getElementById("inputText").value<br>
+        console.log(username) <br>
+        document.getElementById("inputLabel").innerHTML = "Hello " + username
+    <br>
+    } <br>        
+    </code>
+</div>
+
+<div class="monitor-result">
+    <p class="text"> Monitor result ⬇️ </p>
+    <br> 
+    <label id="inputLabel">Enter you name</label> <br>
+    <input type="text" id="inputText"> <br>
+    <button class="btn" type="button" id="inputButton">Submit</button>
+</div>
+    
+
+<div class="separatore"></div> 
+-->
