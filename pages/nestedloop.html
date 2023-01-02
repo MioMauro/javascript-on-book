@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>NESTED LOOP</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>NESTED LOOP</h2>
+    <br>
+
+    <section>
+        <article>    
+        <h3>Nested loop = </h3><br>
+        <h4>a loop inside of another loop</h4>
+        </article>
+    </section>
+    
+    <section>
+            <code>
+                for(let i = 1; i <= 3; i+=1){<br>
+                    console.log(i)<br>
+                }<br><br>
+            <h4>result: 1, 2, 3</h4>
+            </code>
+    </section>
+
+    <section>
+        <code>
+            for(let i = 1; i <= 3; i+=1){<br>
+                for(let j = 1; j <= 3; j+=1){ //loop inside loop<br>
+                console.log(j)<br>
+            }<br><br>
+        <h4>result:<br> 1, 2, 3<br>
+        1, 2, 3<br>
+    1, 2, 3</h4>
+        </code>
+</section>
+
+<section>
+    <code>
+        for(let i = 1; i <= 2; i+=1){<br>
+            for(let j = 1; j <= 3; j+=1){ //loop inside loop<br>
+            console.log(j)<br>
+        }<br><br>
+    <h4>result:<br> 1, 2, 3<br>
+    1, 2, 3<br>
+</h4>
+    </code>
+</section>
+<div class="separatore"></div> 
+<section>
+    <code>        
+        <p class="text"> Html </p>
+        &lt;label id="rectangle"&gt; &lt;/label&gt; <br>        
+    </code>
+</section>
+
+<div class="monitor-javascript">
+    <code>
+        <p class="text"> Javascript </p>
+        <code>
+            let rows = window.prompt('Enter # of rows')<br>
+            let columns = window.prompt('Enter # of columns')<br><br>
+            for(let i = 1; i <= 2; i+=1){<br>
+            for(let j = 1; j <= 3; j+=1){ //loop inside loop<br>
+            document.getElementById('rectangle').innerHTML += j<br>
+    }<br>
+    document.getElementById('rectangle').innerHTML += "&lt;br&gt;"<br>
+}<br>
+    </code>
+</div>
+
+<div class="monitor-result">
+    typing '3'rows and '9'columns ...<br>
+    <p class="text"> Monitor result ⬇️ </p>
+    
+    <br> 
+    <label id="rectangle"></label>
+</div>
+    <div class="separatore"></div> 
+
+
+    <div class="monitor-javascript">
+        <code>
+            <p class="text"> Javascript </p>
+            <code>
+                let symbol = window.prompt('Enter a symbol to use')<br>
+                let rows = window.prompt('Enter # of rows')<br>
+                let columns = window.prompt('Enter # of columns')<br><br>
+                for(let i = 1; i <= 2; i+=1){<br>
+                for(let j = 1; j <= 3; j+=1){<br>
+                document.getElementById('rectangle').innerHTML += symbol<br>
+        }<br>
+        document.getElementById('rectangle').innerHTML += "&lt;br&gt;"<br>
+    }<br><br>
+    <h4>result: using '$' as symbol<br>
+        <br>
+        $$$$$$$$$<br>
+        $$$$$$$$$<br>
+        $$$$$$$$$<br>
+    </h4>
+        </code>
+    </div>
+    
+</body>
+<script src="nestedloop.js"></script>
+</html>
+
