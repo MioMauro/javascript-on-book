@@ -1,0 +1,238 @@
+*{
+    margin: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h2{    
+    margin:0;
+    font-size: 0.8;
+    text-transform: uppercase;
+}
+
+h3{
+    margin: 0;
+    color: rgb(46, 39, 39);
+    font-weight: bold;
+}
+
+h4{
+    margin: 0;
+    letter-spacing: 1.3px;
+}
+
+h5{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    margin-bottom: 0.3rem;
+}
+
+
+.btn-var{
+    background-color: #4CAF50; /* Green */
+    border: 1px black solid;  
+    padding: 6px 0px 6px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+
+button a{
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 3px;
+    color: rgb(61, 40, 40);
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.btn{
+    background-color: #dfbe2b; /* Green */
+    border: 1px black solid;  
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+
+article{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+section{
+    background-color: rgb(134, 216, 216);
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+code{
+    margin: 0 auto; 
+    font-size: 1rem;   
+}
+
+a{
+    color: rgb(61, 40, 40);
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.text{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;        
+}
+
+.separatore{
+    width: 97%;
+    height: 8px;
+    background-color: crimson;
+    border-radius: 3px;
+}
+
+.codebox{
+	display: block; 
+	padding: 3px 3px 2px; 
+	font-size: 14px; 
+	line-height: 20px;
+	width: 100%;
+	background-color: #333;
+	font-family: arial;
+	color: #f7f7f7;
+	font-weight: bold;
+}
+
+.monitor-html{    
+    border-radius: 3px;
+    padding: 0.7rem;
+}
+
+.monitor-javascript{
+    background: rgb(232, 235, 84);
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.monitor-result{
+    background: rgb(104, 102, 102);
+    border-radius: 3px;
+    padding: 1rem;
+    /*overflow: hidden;*/
+}
+
+.nav{
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #dfbe2b;
+}
+
+.nav div, button, input{
+    margin: 5px;
+}
+
+.nav:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.clr{
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform .5s;
+}
+
+.clr:hover{
+    transform: scale(1.2);
+}
+
+.clr:nth-child(1){
+    background-color: #000;
+}
+
+.clr:nth-child(2){
+    background-color: red;
+}
+
+.clr:nth-child(3){
+    background-color: orange;
+}
+
+.clr:nth-child(4){
+    background-color: blue;
+}
+
+.clr:nth-child(5){
+    background-color: purple;
+}
+
+.clr:nth-child(6){
+    background-color: yellowgreen;
+}
+
+.clr:nth-child(7){
+    background-color: yellow;
+}
+
+.clr:nth-child(8){
+    background-color: #fff;
+}
+
+input[type="color"]{
+    width: 60px;
+    height: 40px;
+}
+
+#ageOutputId{
+    color: beige;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+#ageInputId{
+    background: linear-gradient(to right, #000427 0%, #004e92 100%);
+    height: 8px;
+    outline: none;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    border-radius: 5px;
+    border: 3px solid wheat;
+    accent-color: white;
+}
+
+.emoji{
+    font-size: 3rem;
+}
+
+#canvas{
+    background-color: cornflowerblue;
+}
