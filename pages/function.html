@@ -27,11 +27,102 @@
     
     <section>
             <code>
-            let age;<br>
-            console.log(age) <br><br>
-            <h4>result: 8</h4>
+            console.log("Happy new year")<br>
+            console.log("Happy new year bro!")<br>
+            console.log("Happy new year Mauro!")<br>
+            console.log("Happy new Elena!")<br>
+            console.log("Happy birthday dear ___")<br>
+            <br>
+            <h4>We can image this as 5 different function</h4><br>
             </code>
     </section>
+
+    <section>
+        <code>
+            happy() //Need to invoke the function<br>
+            <br>
+            function happy(){<br>
+            console.log("Happy new year")<br>
+            console.log("Happy new year bro!")<br>
+            console.log("Happy new year Mauro!")<br>
+            console.log("Happy new yearElena!")<br>
+            console.log("Happy birthday dear ___")<br>
+            }<br>
+        </code>
+</section>
+
+<section>
+    <code>
+        let userName = "Bro"<br>
+        let age = 22<br><br>
+        happy() //Need to invoke the function<br>
+        <br>
+        function happy(){<br>
+        console.log("Happy new year")<br>
+        console.log("Happy new year bro!")<br>
+        console.log("Happy new year Mauro!")<br>
+        console.log("Happy new yearElena!")<br>
+        console.log("Happy birthday dear", userName, "Now you are", age,  "years old")<br>
+        }<br><br>
+        <h4>result:<br><br>
+            Happy new year<br>
+            function.js:10 Happy new year bro!<br>
+            function.js:11 Happy new year Mauro!<br>
+            function.js:12 Happy new year Elena!<br>
+            function.js:13 Happy birthday dear Bro Now you are 22 years old<br>
+        </h4>
+    </code>
+</section>
+
+<section>
+    <code>
+        <h4>//possiamo usare le variabili in differenti funzioni<br>
+            //importante è inserirle tra le parentesi della funzioone<br>
+            //devono essere uguali</h4><br><br>
+            startProgram()<br>
+            <br>
+function startProgram(){<br>
+    let userName = "Bro"<br>
+    let age = 22<br>
+    <br>
+    happy(userName, age) <br>
+}<br>
+<br>
+function happy(userName, age){<br>
+    console.log("Happy new year")<br>
+    console.log("Happy new year bro!")<br>
+    console.log("Happy new year Mauro!")<br>
+    console.log("Happy new year Elena!")<br>
+    console.log("Happy birthday dear", userName, "Now you are", age, "years old")<br>
+        }<br><br>
+        <h4>result: the same as above</h4>
+    </code>
+</section>
+
+<section>
+    <code>
+        <h4>Same result in a different way<br>
+        Arguments </h4>           
+            <br>
+            startProgram()<br>
+            <br>
+function startProgram(){<br>
+    let userName = "Bro"<br>
+    let age = 22<br>
+    <br>
+    happy(userName, age) // Argument <br>
+}<br>
+<br>
+function happy(a, b){ // A and B is an <b>argument</b> means userName and age<br>
+    console.log("Happy new year")<br>
+    console.log("Happy new year bro!")<br>
+    console.log("Happy new year Mauro!")<br>
+    console.log("Happy new year Elena!")<br>
+    console.log("Happy birthday dear", a, "Now you are", b, "years old")<br>
+        }<br><br>
+        <h4>result: the same as above</h4>
+    </code>
+</section>
 
     <div class="separatore"></div> 
     

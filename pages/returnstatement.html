@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Return statement</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>Return statement</h2>
+    <br>
+
+    <section>
+        <article>    
+        <h3>return = </h3><br>
+        <h4>returns a value back to the place, 
+        where you invoked a function</h4>        
+        </article>
+    </section>
+    
+    <section>
+            <code>
+                <h4>calculating area rectangle</h4><br><br>
+                let area<br>
+                let width<br>
+                let height<br>
+                <br>
+                width = window.prompt("Enter width") // typed 5 <br>
+                height = window.prompt("Enter height") // typed 6 <br>
+                <br>
+                area = getArea(width, height)<br>
+                <br>
+                console.log("The area is:", area)<br>
+                <br>
+                function getArea(width, height){<br>
+                    let result = width * height // result is the return variable<br>
+                    return result <br>
+                }<br><br>
+            <h4>result: The area is: 30</h4>
+            </code>
+    </section>
+
+    <div class="separatore"></div> 
+    
+</body>
+<script src="returnstatement.js"></script>
+</html>
