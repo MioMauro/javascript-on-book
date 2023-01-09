@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Template literals</title>
+</head>
+<body>
+
+    <nav>    
+        <button class="btn-var"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+    </nav>
+
+    <br>
+    <h2>template literals</h2><br>
+    <h3>(letterali modello)</h3>
+    <br>
+
+    <section>
+        <article>    
+        <h3>Template literals = delimited with ( ` backticks )</h3><br>
+        <h4>instead of double or single quotes</h4><br>
+        <h4>allows embedded variables and expressions</h4>
+        </article>
+    </section>
+    
+    <section>
+            <code>
+                let userName = "Bro"<br>
+let items = 3<br>
+let total = 75<br>
+<br>
+console.log("Hello", userName)<br>
+console.log("You have", items, "items in your cart")<br>
+console.log("Your total is $", total)<br>
+<br>
+            <h4>result: Hello Bro<br>
+                You have 3 items in your cart<br>
+                Your total is $ 75</h4>
+            </code>
+    </section>
+
+    <section>
+    <h3>best practice using ( ` ) backticks, Template literals</h3><br>
+    <code>
+    let userName = "Bro"<br>
+    let items = 3<br>
+    let total = 75<br>
+    <br>
+    console.log(`Hello, ${userName}`)<br>
+    console.log(`You have ${items} items in your cart`)<br>
+    console.log(`Your total is $: ${total}`)<br>
+    <br>
+                <h4>result: Hello Bro<br>
+                    You have 3 items in your cart<br>
+                    Your total is $ 75</h4>
+                </code>
+        </section>
+
+        <section>
+            <h3>If we would like display one very long string... assign a new variable</h3><br>
+            <code>
+                let userName = "Bro"<br>
+                let items = 3<br>
+                let total = 75<br>
+                <br>
+                let text =<br> `Hello, ${userName}<br>
+                You have ${items} items in your cart<br>
+                Your total is $: ${total}`<br>
+                <br>
+                console.log(text)<br><br>
+                        <h4>result: Hello Bro<br>
+                            You have 3 items in your cart<br>
+                            Your total is $ 75</h4>
+                        </code>
+                </section>
+
+                <section>
+                    <code>
+                        <h4>(updating the label)</h4><br>
+                        <p class="text"> Html </p>
+                        &lt;label id="myLabel"&gt; &lt;/label&gt; <br>
+                    </code>
+                </section>
+
+                <div class="monitor-javascript">
+                    <code>
+                        <p class="text"> Javascript </p><br>
+                        let userName = "Bro"<br>
+                        let items = 3<br>
+                        let total = 75<br>
+                        <br>
+                        let text = `Hello, ${userName}&lt;br&gt; // we can add break tag inside the backticks<br>
+                        You have ${items} items in your cart&lt;br&gt;<br>
+                        Your total is $: ${total}&lt;br&gt;`<br>
+                        <br>
+                        document.getElementById("myLabel").innerHTML = text<br>
+                    <br>
+                    </code>
+                </div>
+
+                <div class="monitor-result">
+                    <p class="text"> Monitor result ⬇️ </p>
+                    <br> 
+                    <label id="myLabel"></label> <br>         
+                    
+                </div>
+
+    <div class="separatore"></div> 
+    
+</body>
+<script src="templateliterals.js"></script>
+</html>
+

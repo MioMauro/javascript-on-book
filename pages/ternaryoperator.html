@@ -25,57 +25,56 @@
         1. a condition with?<br>
         2. expression if True :<br>
         3. expression if False<br>
+        <br>
+        condition ? expIfTrue : expIfFalse
+        
         </article>
     </section>
     
     <section>
             <code>
-            let age;<br>
-            console.log(age) <br><br>
-            <h4>result: 8</h4>
+                let adult = checkAge(21)<br>
+                console.log(adult)<br>
+                <br>
+                function checkAge(age){<br>
+                        if(age >= 18){ // is equal or greater than 18<br>
+                          return true // return boolean true<br>
+                        }<br>
+                        else {<br>
+                                return false<br>
+                        }<br>
+                }<br><br>
+            <h4>result: true</h4><br>
+            <h4>result if checkAge is 12: false</h4>
             </code>
     </section>
+
+    <section>
+        <code>
+            let adult = checkAge(12)<br>
+            console.log(adult)<br>
+            <br>
+            function checkAge(age){<br>
+                return age >= 18 ? true : false // return if equal or greater than 18, otherwise is false<br>
+                }<br><br>
+        <h4>result: false</h4><br>
+        <h4>result if checkAge is 21: true</h4>
+        </code>
+</section>
+
+<section>
+    <code>
+        checkWinner(true)<br><br>
+        function checkWinner(win){<br>
+        win ? console.log('You win') : console.log('You lose!') // if win is true, otherwise is false<br>
+}<br><br>
+    <h4>result: You win!</h4><br>    
+    <h4>result if checkWinner is false: You lose!</h4>    
+    </code>
+</section>
 
     <div class="separatore"></div> 
     
 </body>
 <script src="ternaryoperator.js"></script>
 </html>
-
-<!--
-    <p><i><b>good practice</b></i></p><br>
-<p>---------------------------------------------------------------------------</p>
-    <section>
-    <code>
-        <h3>(Difficult way using HTML)</h3><br>
-        <p class="text"> Html </p>
-        &lt;label id="inputLabel"&gt;Enter you name &lt;/label&gt; <br>
-        &lt;input type="text" id="inputText"&gt; &lt;/input&gt; <br>
-        &lt;button class="btn" type="button" id="inputButton"&gt;Submit&lt;/button&gt; <br>
-    </code>
-</section>
-
-<div class="monitor-javascript">
-    <code>
-        <p class="text"> Javascript </p>
-        let username<br>
-        document.getElementById("inputButton").onclick = function(){<br>
-        username = document.getElementById("inputText").value<br>
-        console.log(username) <br>
-        document.getElementById("inputLabel").innerHTML = "Hello " + username
-    <br>
-    } <br>        
-    </code>
-</div>
-
-<div class="monitor-result">
-    <p class="text"> Monitor result ⬇️ </p>
-    <br> 
-    <label id="inputLabel">Enter you name</label> <br>
-    <input type="text" id="inputText"> <br>
-    <button class="btn" type="button" id="inputButton">Submit</button>
-</div>
-    
-
-<div class="separatore"></div> 
--->
